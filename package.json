@@ -1,0 +1,20 @@
+{
+  "name": "enfin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "buil:sass":"sass src/styles.scss dist/styles.css --watch",
+    "build:ts":"tsc",
+    "build:scss":"sass src/styles.scss dist/styles.css",
+    "build":"npm run build:ts && npm run build:scss",
+    "watch":"tsc --watch & sass --watch src/styles.scss:dist/styles.css" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.85.1",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,17 @@
+
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "ES2016",
+    "module":"ES2015",
+    "noEmitOnError": true,
+    "strict": true
+    
+  },
+  "files": [
+    "src/CV.ts",
+    
+    
+  ]
+}

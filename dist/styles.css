@@ -1,0 +1,31 @@
+.cv {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e05757;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.cv h1 {
+  color: #0b0b0b;
+}
+.cv h2 {
+  text-align: center;
+  color: #0f023d;
+}
+.cv h3 {
+  color: #0e0231;
+}
+.cv ul {
+  list-style-type: none;
+  padding: 0;
+}
+.cv li {
+  background: #ecf0f1;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=styles.css.map */

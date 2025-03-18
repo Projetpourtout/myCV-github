@@ -7,7 +7,7 @@
   background-color: #e05757;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  /*pour mettre en ligne mon header*/
+  /*pour aligner  mon header*/
   /*fin dalignement*/
   /*pour l'alignement de langue et cordonnées*/
 }
@@ -35,11 +35,11 @@
   border-radius: 5px;
   color: black;
 }
+.cv .section {
+  width: 48%;
+}
 .cv .section p span {
   color: blue;
-}
-.cv .section {
-  width: 48%; /* Ajuste selon l'espace souhaité */
 }
 .cv ul {
   list-style-type: none;

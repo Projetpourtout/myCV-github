@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cv {
   font-family: Arial, sans-serif;
   max-width: 600px;
@@ -6,16 +7,39 @@
   background-color: #e05757;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /*pour mettre en ligne mon header*/
+  /*fin dalignement*/
+  /*pour l'alignement de langue et cordonnées*/
+}
+.cv .pour__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.cv .pour__header h2:hover {
+  border-bottom: 1px solid black;
+  color: rgb(141, 174, 8);
 }
 .cv h1 {
+  font-size: 20px;
   color: #0b0b0b;
 }
 .cv h2 {
   text-align: center;
   color: #0f023d;
 }
-.cv h3 {
-  color: #0e0231;
+.cv .pour__lacom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+}
+.cv .section p span {
+  color: blue;
+}
+.cv .section {
+  width: 48%; /* Ajuste selon l'espace souhaité */
 }
 .cv ul {
   list-style-type: none;

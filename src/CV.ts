@@ -6,7 +6,7 @@ interface CV {
     LANGUES:string;
     COORDONNEES: {
         Email: string;
-        telephone: string;
+        Telephone: string;
         Address: string;
     };
   }
@@ -21,9 +21,9 @@ interface CV {
         { Université: "G.S Hadjia Mariama Diallo", Departement: "BREVET D'ETUDE DU PREMIER CYCLE(BEPC)", Année: "2017-2018" },
     ],
     COORDONNEES: {
-        Email: "barrythiernoabdoulaye177@gmail.com",
-        telephone: "625-11-18-30",
-        Address:"KOUNTIA NORD"
+        Email: " barrythiernoabdoulaye177@gmail.com ",
+        Telephone: " 625-11-18-30 ",
+        Address:" KOUNTIA NORD "
     },
     LANGUES:"Français, Anglais(en apprentissage)"
 
@@ -34,9 +34,10 @@ interface CV {
     if (app) {
       app.innerHTML = `
         <div class="cv">
-        
+         <div class="pour__header">
           <h1>${myCV.Nom}</h1>
           <h2>${myCV.Poste}</h2>
+          </div>
          
           <h3>Competences</h3>
           <ul>${myCV.Competences.map(skill => `<li>${skill}</li>`).join("")}</ul>
@@ -44,12 +45,18 @@ interface CV {
           <ul>
             ${myCV.Education.map(edu => `<p>${edu.Departement} - ${edu.Université} ${edu.Année}</p>`).join('')}
           </ul>
-          <h3>LANGUES</h3>
-          ${myCV.LANGUES}
+          <div class="pour__lacom">
+            <div class="section">
+            <h3>LANGUES</h3>
+          <p>${myCV.LANGUES}</p>
+             </div>
+             <div class="section">
           <h3>COORDONNEES</h3>
-          <p>Email:${myCV.COORDONNEES.Email}</p>
-          <p>telephone:${myCV.COORDONNEES.telephone}</p>
+          <p><span> Email:${myCV.COORDONNEES.Email}</span></p>
+          <p>telephone:${myCV.COORDONNEES.Telephone}</p>
           <p>Address:${myCV.COORDONNEES.Address}</p>
+          </div>
+          </div>
         </div>
       `;
     }

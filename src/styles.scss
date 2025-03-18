@@ -8,11 +8,22 @@ $color-2:#0f023d;
     background-color: #e05757;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    
-    
+    /*pour mettre en ligne mon header*/
+    .pour__header{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+    }
+    .pour__header h2:hover{
+      border-bottom: 1px solid black;
+      color: rgb(141, 174, 8);
+       
+    }
+    /*fin dalignement*/
   
     h1 {
-        
+      
+     font-size: 20px;   
       color:$color-1;
     }
   
@@ -20,10 +31,20 @@ $color-2:#0f023d;
         text-align: center;
       color: $color-2;
     }
-  
-    h3 {
-      color: #0e0231;
-    }
+  /*pour l'alignement de langue et cordonnées*/
+  .pour__lacom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+}
+.section p span{
+  color:blue
+}
+.section {
+    width: 48%; /* Ajuste selon l'espace souhaité */
+}
   
     ul {
       list-style-type: none;
